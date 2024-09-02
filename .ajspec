@@ -1,0 +1,16 @@
+tags: 13.3
+13.3.arch: amd64
+13.3.name: "jupyter-notebook"
+13.3.timestamp.amd64: 1725291423
+13.3.sum.amd64: 2837bafea6434c87b3f128e33284d9235e2529fec825e94477b3dce5a8bca4fa
+13.3.size.amd64: 155841269
+13.3.source.amd64: "http://appjail.hpc.at/jupyter-notebook/13.3-amd64-image.appjail"
+13.3.source.amd64+: "https://images.all101bsd.download/jupyter-notebook/13.3-amd64-image.appjail"
+tags+: 14.1
+14.1.arch: amd64
+14.1.name: "jupyter-notebook"
+14.1.timestamp.amd64: 1725291599
+14.1.sum.amd64: 541c23aa38526a25923e9244b53fe8fa131d3567cc36576a833fe6833f9f9b24
+14.1.size.amd64: 155259174
+14.1.source.amd64: "http://appjail.hpc.at/jupyter-notebook/14.1-amd64-image.appjail"
+14.1.source.amd64+: "https://images.all101bsd.download/jupyter-notebook/14.1-amd64-image.appjail"
