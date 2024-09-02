@@ -35,15 +35,15 @@ services:
     options:
       - expose: 8888
     volumes:
-      - data: jupyter-data
+      - home: jupyter-home
     start-environment:
       - JUPYTER_CMD: 'notebook'
 
 default_volume_type: '<volumefs>'
 
 volumes:
-  data:
-    device: .volumes/jupyter-data
+  home:
+    device: .volumes/jupyter-home
 ```
 
 **.env**:
@@ -79,9 +79,9 @@ appjail run -s jupyter_log jupyter
 
 ### Volumes
 
-| Name          | Owner | Group | Perm | Type | Mountpoint     |
-| ------------- | ----- | ----- | ---- | ---- | -------------- |
-| jupyter-data | 1001  | 1001  |  -   |  -   | /jupyter/data  |
+| Name         | Owner | Group | Perm | Type | Mountpoint     |
+| ------------ | ----- | ----- | ---- | ---- | -------------- |
+| jupyter-home | 1001  | 1001  |  -   |  -   | /jupyter/home  |
 
 ## Tags
 
