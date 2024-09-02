@@ -1,0 +1,10 @@
+INCLUDE options/options.makejail
+INCLUDE options/volumes.makejail
+
+PKG python py311-notebook py311-jupyterlab
+
+CMD pw useradd -n jupyter -d /jupyter -s /bin/sh -c "Web-based notebook environment for interactive computing"
+CMD mkdir -p /jupyter /jupyter/data
+CMD chown -R jupyter:jupyter /jupyter
+
+COPY files/start-notebook.py /jupyter/start-notebook.py
