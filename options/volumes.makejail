@@ -1,1 +1,1 @@
-OPTION volume=jupyter-data mountpoint:/jupyter/data owner:1001 group:1001
+OPTION volume=jupyter-home mountpoint:/jupyter owner:1001 group:1001
