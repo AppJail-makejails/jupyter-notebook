@@ -89,3 +89,7 @@ appjail run -s jupyter_log jupyter
 | ------ | ------- | -------------- | ------ |
 | `13.3` | `amd64` | `13.3-RELEASE` | `thin` |
 | `14.1` | `amd64` | `14.1-RELEASE` | `thin` |
+
+## Notes
+
+1. If you want to install extensions through the web interface, install `devel/py-pip`.
