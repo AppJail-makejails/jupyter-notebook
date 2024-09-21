@@ -1,6 +1,6 @@
 INCLUDE options/options.makejail
 
-ARG jupyter_tag=13.3
+ARG jupyter_tag=13.4
 
 FROM --entrypoint gh+AppJail-makejails/jupyter-notebook jupyter-notebook:${jupyter_tag}
 
