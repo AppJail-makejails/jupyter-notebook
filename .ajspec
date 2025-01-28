@@ -1,17 +1,17 @@
 tags+: 13.4
 13.4.arch: amd64
 13.4.name: "jupyter-notebook"
-13.4.timestamp.amd64: 1738088119
-13.4.sum.amd64: 70972eba014361e894d3ea1c19ad38c9dbbdc92686ef0794d4d1c9aee51e89a2
-13.4.size.amd64: 160603652
+13.4.timestamp.amd64: 1738108297
+13.4.sum.amd64: c603b33aa3684532ea6a464f0ed21175abaa74a76a6744f897868e1b79a77a7f
+13.4.size.amd64: 160600388
 13.4.source.amd64: "http://appjail.hpc.at/jupyter-notebook/13.4-amd64-image.appjail"
 13.4.source.amd64+: "https://images.all101bsd.download/jupyter-notebook/13.4-amd64-image.appjail"
 tags+: 14.2
 14.2.arch: amd64
 14.2.name: "jupyter-notebook"
-14.2.timestamp.amd64: 1738088289
-14.2.sum.amd64: 2bc6b67efe624a6ca280fc47aac5ebf56bb63fa0263876fb60a7c729ef7c2a0b
-14.2.size.amd64: 163211057
+14.2.timestamp.amd64: 1738108480
+14.2.sum.amd64: 05e1a9f407a25c3361eba79bb70c6a4cfbca0ebdd4f0be592b754c9d4a8938e6
+14.2.size.amd64: 163213352
 14.2.source.amd64: "http://appjail.hpc.at/jupyter-notebook/14.2-amd64-image.appjail"
 14.2.source.amd64+: "https://images.all101bsd.download/jupyter-notebook/14.2-amd64-image.appjail"
 maintenance: "This image is uploading, please wait a moment and try again. If you are importing this image using a Makejail that has the '--<name>_ajspec' argument, you can use the 'reproduce' method to use 'appjail-reproduce'. See 'appjail-image(5)' for details."
