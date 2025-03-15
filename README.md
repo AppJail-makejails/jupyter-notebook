@@ -54,7 +54,7 @@ DIRECTOR_PROJECT=jupyter
 
 ### Arguments (stage: build)
 
-* `jupyter_tag` (default: `13.4`): see [#tags](#tags).
+* `jupyter_tag` (default: `13.5`): see [#tags](#tags).
 * `jupyter_ajspec` (default: `gh+AppJail-makejails/jupyter`): Entry point where the `appjail-ajspec(5)` file is located.
 
 ### Environment (stage: start)
@@ -88,7 +88,7 @@ appjail run -s jupyter_log jupyter
 
 | Tag    | Arch    | Version        | Type   |
 | ------ | ------- | -------------- | ------ |
-| `13.4` | `amd64` | `13.4-RELEASE` | `thin` |
+| `13.5` | `amd64` | `13.5-RELEASE` | `thin` |
 | `14.2` | `amd64` | `14.2-RELEASE` | `thin` |
 
 ## Notes
