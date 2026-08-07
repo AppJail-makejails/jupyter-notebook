@@ -1,34 +1,6 @@
-INCLUDE options/options.makejail
+ARG jupyter_from=ghcr.io/appjail-makejails/jupyter-notebook
+ARG jupyter_tag=latest
 
-ARG jupyter_tag=14.3
-ARG jupyter_ajspec=gh+AppJail-makejails/jupyter-notebook
-
-FROM --entrypoint "${jupyter_ajspec}" jupyter-notebook:${jupyter_tag}
-
-STOP
-
-STAGE start
-
-USER jupyter
-
-ENV JUPYTER_ARGS=--ip=0.0.0.0 --port=8888
-
-WORKDIR /jupyter/data
-
-RUN daemon \
-        -t "Web-based notebook environment for interactive computing" \
-        -p /jupyter/.pid \
-        -o /jupyter/.log \
-            python ../start-notebook.py
-
-STAGE custom:jupyter_status
-
-CMD if [ -f "/jupyter/.pid" ]; then \
-        top -ap `head -1 /jupyter/.pid`; \
-    fi
-
-STAGE custom:jupyter_log
-
-CMD if [ -f "/jupyter/.log" ]; then \
-        less -R /jupyter/.log; \
-    fi
+OPTION container=boot
+OPTION overwrite=force
+OPTION from=${jupyter_from}:${jupyter_tag}
