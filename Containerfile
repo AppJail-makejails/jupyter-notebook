@@ -15,7 +15,7 @@ LABEL org.opencontainers.image.title="Jupyter" \
 RUN set -xe; \
     \
     pkg update; \
-    pkg install -U \
+    pkg install \
         python \
         py${PYVER}-pip \
         py${PYVER}-notebook \
