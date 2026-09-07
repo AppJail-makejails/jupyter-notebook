@@ -24,7 +24,8 @@ RUN set -xe; \
         py${PYVER}-jupyter-kernel-gateway \
         npm \
         rust \
-        FreeBSD-set-base-jail; \
+        FreeBSD-set-base-jail \
+        cmake; \
     \
     if [ -z "${NO_PKGCLEAN}" ]; then \
         pkg clean -a; \
@@ -51,7 +52,10 @@ RUN set -xe; \
     if [ -z "${NO_PKGCLEAN}" ]; then \
         rm -rf /.cache; \
         rm -rf /.cargo; \
-    fi
+    fi; \
+    \
+    pkg remove cmake; \
+    pkg autoremove
 
 RUN mkdir /entrypoint.d
 COPY entrypoint.sh start-notebook.py start-singleuser.py /
